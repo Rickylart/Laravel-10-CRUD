@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('title', 'Home')
 @section('content')
-@section('card-title', 'View Products')
+@section('card-title', 'View Products - Normal Route Home')
 
 {{-- calling the alert component --}}
 <x-alert-component />
