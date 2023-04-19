@@ -17,5 +17,7 @@ jobs:
         server: ftp.fasthosttech.com
         username: fasthos1
         password: w.kGjJR345x;0V
+        protocol: ftp
+        port: 21 
         server-dir: /public_html/crudapp.fasthosttech.com/
         
