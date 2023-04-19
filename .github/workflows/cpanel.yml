@@ -16,6 +16,6 @@ jobs:
       with:
         server: ftp.fasthosttech.com
         username: fasthos1
-        password: "w.kGjJR345x;0V"
+        password: w.kGjJR345x;0V
         server-dir: /public_html/crudapp.fasthosttech.com/
         
