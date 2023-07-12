@@ -1,7 +1,7 @@
-on: 
+on:
   push:
     branches:
-      - main
+      - dev
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
@@ -9,14 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
-      uses: actions/checkout@v2.3.2
-    
+      uses: actions/checkout@v3
+
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ftp.fasthosttech.com
+        server: www.fasthosttech.com
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        protocol: ftp
-        port: 21 
         server-dir: /public_html/crudapp.fasthosttech.com/
