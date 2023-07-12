@@ -15,8 +15,8 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
         server: ftp.fasthosttech.com
-        username: fasthos1
-        password: w.kGjJR345x;0V
+        username: ${{ secrets.ftp_username }}
+        password: ${{ secrets.ftp_password }}
         protocol: ftp
         port: 21 
         server-dir: /public_html/crudapp.fasthosttech.com/
