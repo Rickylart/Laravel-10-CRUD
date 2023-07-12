@@ -14,7 +14,9 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: www.fasthosttech.com
+        server: ftp.fasthosttech.com
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
+        protocol: ftp
+        port: 21
         server-dir: /public_html/crudapp.fasthosttech.com/
